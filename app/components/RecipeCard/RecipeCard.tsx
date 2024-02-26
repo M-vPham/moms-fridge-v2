@@ -1,18 +1,11 @@
 import React from "react";
-import Image from "next/image";
-
-interface Recipe {
-  recipeTitle: string;
-  recipeImageSrc?: string;
-  recipeDescription: String;
-  recipeCatagory: String;
-}
+import { Recipe } from "@/app/interfaces/type";
 
 const RecipeCard = ({
   recipeTitle,
   recipeImageSrc,
   recipeDescription,
-  recipeCatagory,
+  recipeCategory,
 }: Recipe) => {
   return (
     <div className="card card-compact w-60 bg-base-100 shadow-xl">
@@ -27,7 +20,7 @@ const RecipeCard = ({
 
         <p className="">{recipeDescription}</p>
         <div className="card-actions justify-end">
-          <div className="badge badge-neutral">{recipeCatagory}</div>
+          <div className="badge badge-neutral">{recipeCategory}</div>
         </div>
       </div>
     </div>
