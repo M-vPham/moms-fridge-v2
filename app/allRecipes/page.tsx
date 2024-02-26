@@ -1,15 +1,22 @@
-import React from "react";
-import RecipeCard from "../components/RecipeCard/RecipeCard";
+import React, { useState } from "react";
 
-const AllRecipes = () => {
+import { Recipe } from "@/app/interfaces/type";
+import RecipeCard from "../components/RecipeCard/RecipeCard";
+import { getAllRecipes } from "../api/recipeApi";
+
+const AllRecipes = async () => {
+  const recipes = await getAllRecipes();
   return (
     <div>
       <p> The page that shows all the recipes.</p>
-      <RecipeCard
-        recipeTitle="Recipe Title"
-        recipeDescription="Recipe Description"
-        recipeCatagory="Category"
-      />
+      {recipes.map((recipe: any) => (
+        <RecipeCard
+          key={recipe.key}
+          recipeTitle={recipe.title}
+          recipeDescription={recipe.body}
+          recipeCategory={recipe.brand}
+        />
+      ))}
     </div>
   );
 };
