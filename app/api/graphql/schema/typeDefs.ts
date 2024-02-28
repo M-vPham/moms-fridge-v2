@@ -1,8 +1,14 @@
 import { gql } from 'graphql-tag';
 
+
 const typeDefs = gql`
+  type Recipe {
+    id: ID!
+    name: String!
+  }
+
   type Query {
-    hello: String
+    recipes: [Recipe]
   }
 `;
 
