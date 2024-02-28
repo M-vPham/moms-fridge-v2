@@ -1,5 +1,5 @@
 import Link from "next/link";
-import FilterBar from "./components/FilterBar/FilterBar";
+import FilterBar from "../components/FilterBar/FilterBar";
 
 export default function Home() {
   return (
