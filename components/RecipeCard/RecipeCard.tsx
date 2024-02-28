@@ -1,5 +1,5 @@
 import React from "react";
-import { Recipe } from "@/app/interfaces/type";
+import { Recipe } from "../../app/interfaces/type";
 
 const RecipeCard = ({
   recipeTitle,

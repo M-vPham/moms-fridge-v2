@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import { Recipe } from "@/app/interfaces/type";
-import RecipeCard from "../components/RecipeCard/RecipeCard";
+import { Recipe } from "../interfaces/type";
+import RecipeCard from "../../components/RecipeCard/RecipeCard.tsx";
 import { getAllRecipes } from "../api/recipeApi";
 
 const AllRecipes = async () => {
