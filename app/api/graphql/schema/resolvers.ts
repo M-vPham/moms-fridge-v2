@@ -1,7 +1,7 @@
+//@ts-nocheck
 const resolvers = {
-    Query: {
-      hello: () => "Hello world!",
-    },
-  };
-
+  Query: {
+    recipes: () => recipes,
+  },
+};
 export default resolvers;
