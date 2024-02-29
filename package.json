@@ -13,11 +13,14 @@
     "@apollo/server": "^4.10.0",
     "@as-integrations/next": "^3.0.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "dotenv": "^16.4.5",
 =======
     "apollo-server-core": "^3.13.0",
     "apollo-server-express": "^3.13.0",
 >>>>>>> 6da2acd (Connected to a mongodb server.)
+=======
+>>>>>>> 1adc45a (Switched to startStandaloneServer in apollo/server package)
     "express": "^4.18.2",
     "graphql": "^16.8.1",
     "graphql-tag": "^2.12.6",
