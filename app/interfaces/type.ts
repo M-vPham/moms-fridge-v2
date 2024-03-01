@@ -5,3 +5,7 @@ export interface Recipe {
     recipeDescription: String;
     recipeCategory: String;
   }
+
+export interface MyContext{
+    token?: String;
+  }
