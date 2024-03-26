@@ -1,14 +1,26 @@
-"use client";
 import React from "react";
-import styles from "./FilterBar.module.css";
+import Link from "next/link";
+import SearchInput from "../SearchInput/SearchInput";
 const FilterBar = () => {
   return (
-    <div className={styles.filterBar}>
-      <input
-        type="text"
-        placeholder="Type here"
-        className="input input-bordered w-full max-w-xs"
-      />
+    <div className="navbar">
+      <div className="flex-1">
+        <Link className="btn btn-ghost text-2xl" href="/">
+          Mom's Fridge
+        </Link>
+      </div>
+      <ul className="menu menu-horizontal px-2">
+        <Link
+          className="menu menu-horizontal text-base px-2"
+          href="/allRecipes"
+        >
+          Recipes
+        </Link>
+        <Link className="menu menu-horizontal text-base px-2" href="/aboutUs">
+          About Us
+        </Link>
+        <SearchInput />
+      </ul>
     </div>
   );
 };
