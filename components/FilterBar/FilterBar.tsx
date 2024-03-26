@@ -5,9 +5,11 @@ const FilterBar = () => {
   return (
     <div className="navbar">
       <div className="flex-1">
-        <a className="btn btn-ghost text-2xl">Mom's Fridge</a>
+        <Link className="btn btn-ghost text-2xl" href="/">
+          Mom's Fridge
+        </Link>
       </div>
-      <ul className="menu menu-horizontal px-4">
+      <ul className="menu menu-horizontal px-2">
         <Link
           className="menu menu-horizontal text-base px-2"
           href="/allRecipes"
